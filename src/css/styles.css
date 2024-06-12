@@ -1,0 +1,272 @@
+Global styles * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+/* Page layout */
+
+.page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets//webiste.png');
+    /* Adjust path as necessary */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.349);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.page__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+}
+
+
+/* Typography */
+
+.page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.page h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.page h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+/* Flip clock styles */
+
+.flip-clock {
+    --fcc-flip-duration: 0.5s;
+    --fcc-digit-block-width: 40px;
+    --fcc-digit-block-height: 60px;
+    --fcc-digit-font-size: 30px;
+    --fcc-digit-color: white;
+    --fcc-label-font-size: 10px;
+    --fcc-label-color: #ffffff;
+    --fcc-background: white;
+    --fcc-divider-color: white;
+    --fcc-divider-height: 1px;
+    --fcc-separator-size: 6px;
+    --fcc-separator-color: red;
+}
+
+
+/* Button styles */
+
+.register-button,
+.explore-button {
+    margin-top: 1rem;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.register-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.explore-button {
+    background-color: #008CBA;
+    color: white;
+    margin-left: 10px;
+}
+
+.explore-button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+}
+
+
+/* Logo styles */
+
+.logo {
+    margin-top: 2rem;
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+
+/* Superscript styles */
+
+.sup {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+.number {
+    margin-right: -0.2em;
+}
+
+.email-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.email-input.invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.notify-button,
+.explore-button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.notify-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.notify-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.explore-button {
+    background-color: #008CBA;
+    color: white;
+}
+
+.explore-button:hover {
+    background-color: #0073e6;
+}
+
+@media screen and (max-width: 768px) {
+    .page h1 {
+        font-size: 2.5rem;
+    }
+    .page h3 {
+        font-size: 1.3rem;
+    }
+    .page h4 {
+        font-size: 1rem;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page h1 {
+        font-size: 2rem;
+    }
+    .page h3 {
+        font-size: 1.2rem;
+    }
+    .page h4 {
+        font-size: 0.9rem;
+    }
+    .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 0.3rem;
+    }
+}
+
+
+/*---------------------
+  Our Partners
+-----------------------*/
+
+#supporters {
+    padding: 60px 0;
+}
+
+#supporters .supporters-wrap {
+    border-top: 1px solid #e0e5fa;
+    border-left: 1px solid #e0e5fa;
+    margin-bottom: 30px;
+}
+
+#supporters .supporter-logo {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    height: 160px;
+}
+
+#supporters .supporter-logo:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#supporters img {
+    transition: all 0.4s ease-in-out;
+}
