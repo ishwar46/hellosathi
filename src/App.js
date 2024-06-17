@@ -5,6 +5,7 @@ import NotFoundPage from "./components/NotFoundPage";
 import { Toaster } from "react-hot-toast";
 import LoginPage from "./pages/LoginView";
 import ChatPage from "./pages/ChatPage";
+import LiveChat from "./pages/LiveChat";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         {" "}
         <Route path="/" element={<LoginPage />} />{" "}
         <Route path="/chatpage" element={<ChatPage />} />{" "}
+        <Route path="/livechat" element={<LiveChat />} />{" "}
         {/* Catch-all for 404 Not Found */}{" "}
         <Route path="*" element={<NotFoundPage />} />{" "}
       </Routes>{" "}

@@ -1,5 +1,5 @@
 const responses = {
-  "it in business":
+  "it in business?":
     "IT in business enhances efficiency through automation, secure data management, and effective communication tools. It supports customer relationship management, e-commerce, financial management, cybersecurity, and supply chain optimization. IT fosters innovation with AI, IoT, and blockchain, leading to better decision-making, improved customer service, increased revenue, and robust risk management.",
 
   "thank you":
